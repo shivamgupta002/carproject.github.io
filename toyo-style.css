@@ -1,0 +1,129 @@
+
+.all{
+    @import url('https://fonts.gooogleapis.com/css2?family=Open+sons:ital,wght@1,300&display=swap');  
+    font-family:'Open Sans',sans-serif;
+
+    letter-spacing: normal;
+    word-spacing: 0.125rem;
+    padding-left: 3.125rem;
+    font-size: 1.875rem;
+
+}  
+a{
+        text-decoration: none;
+    }
+
+table,th,td{
+    @impoort url('https://fonts.googleeapis.com/css2?family=comfort&family=rowdies:wght@700&display=swap');
+    font-family :'Comforter',cursive;
+    font-family:'Rowdies',cursive;
+    border: 0.125rem solid rgb(17, 1, 1);
+    width: 60%;
+    text-align: center;      
+    margin-left: 18.75rem;
+}
+.logo{
+        display: block;
+    margin-left: 21.875rem;
+    margin-right: auto;
+    width: 37.5rem;
+    height:31.25rem;
+}   
+    .pic{
+        display: block;
+        width: 87.5rem;
+        height: 56.25rem;
+        margin-left: auto;
+        margin-right: 30%;
+    }
+    /* Sites */
+    a:visited{
+    color: rgb(172, 130, 14);
+
+}    
+a:hover{
+    color: red;
+}
+a:active{
+    color: black;
+}
+a:hover{
+    color: rgb(12, 207, 100);
+}
+.next{
+        background-color: antiquewhite;
+        border:2px solid blueviolet;
+        color: aqua;
+        padding: 0.938rem 2rem;
+        text-align: center;
+        /* display: inline-block; */
+        font-size: large;
+        margin-left: 90%;
+        margin-right: auto;
+        cursor: pointer;
+ }
+.pre{
+        background-color: antiquewhite;
+        border:2px solid blueviolet;
+        color: white;
+        padding:  0.938rem 2rem;
+        text-align: center;
+        /* display: inline-block; */
+        font-size: large;
+        margin-left:auto ;
+        margin-right:90%;
+        cursor: pointer;
+}
+
+
+  /* ##############################    Media quaries   #################### */
+
+  @media (max-width: 500px){
+        html{
+            font-size: 50%;
+        }
+        .all{
+            word-spacing: 0.125rem;
+            padding-left: 0.125rem;
+            word-wrap: normal;
+            font-size: 1.50rem; 
+        }  
+        
+        table,th,td{
+            
+            width: 85%;
+            text-align: center;      
+            margin-left: 0.55rem;
+        }
+        .logo{
+            display: block;
+            margin-left: 15rem;    
+            width:9rem;
+            height:6rem;
+        }   
+    
+        .pic{
+            display: block;
+            width: 40.5rem;
+            height: 26.25rem;
+            margin-left: 0.75rem;
+        } 
+        .pic1{
+            display: block;
+            width: 40.5rem;
+            height: 26.25rem;
+            margin-left: 0.75rem;
+        }
+        .btn{
+            margin-bottom: 5rem;
+        }        
+        .btn .pre{
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+        }
+        .btn .next{       
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 1rem;
+        }
+}

@@ -1,0 +1,424 @@
+
+     *{
+        margin:0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    /* ########### HTML STYLING ############# */
+
+    .navbar::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+   .navbar .logo{
+        float: left;
+        margin-top: 0.1rem;
+        height: 3rem;
+        /* text-transform: uppercase; */
+    }
+    .navbar .nav-items{
+        float:right;
+        margin-top: 1rem;
+        word-spacing: 0.75rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+    .navbar .nav-item{
+        display: inline-block;
+    }
+
+    .navbar a:link,
+    .navbar a:visited{
+       color: aliceblue;
+    }
+    .navbar a{
+        padding-bottom: 2px;
+    }
+
+    .navbar a:hover{
+        border-bottom: 2px solid white;
+    }
+
+    h1{
+        color: aliceblue;
+        font-weight: 500;
+    }
+    html{
+        font-size: 105%;
+    }
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    a{
+        font-size: 105%;
+        text-decoration: none;
+    }
+    ul li{
+        list-style: none;
+    }
+    p,li{
+        font-size: 105%;
+        margin-bottom: 0.5rem;
+    }
+    h1,h2,h3{
+        margin-bottom: 0.5rem;
+       letter-spacing: 0.15rem;
+       font-weight: 500;
+    }
+        /* #############   utilty classes ############### */
+
+   .container{
+       max-width: 1200px;
+       width: 90%;
+       margin: 0 auto;
+   }
+
+    .lg.heading{
+       font-size: 3.5rem;
+    }
+    .md.heading{
+        font-size: 2.4rem;
+    }
+    .text-red{
+        color: red;
+    }
+    .text-light{
+        color: beige;
+    }
+    .text-black{
+        color: black;
+    }
+    .text-gray{
+        color: gray;
+    }
+
+    .bg-dark{
+        background-color:rgba(0, 0, 0, 0.589);
+        height: 22vh;
+    }
+    .btn{
+       display: inline-block;
+       padding: 0.5em;
+       font-weight: 500;
+       text-transform: uppercase;
+       margin: 0.5em 0;
+    }
+    .btn-primary{
+       background-color: white;
+       border-radius: 10rem;
+    }
+    .btn-secondary{
+        border: 2px solid red;
+       background-color: antiquewhite;
+       border-radius: 13rem;
+    }
+
+    /* ##################  HEADER STYLING ############### */
+   
+    .header{
+         height: 95vh;
+        
+        position: relative;
+        background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./homepage.jpeg');    
+        /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .header-content h1{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .header-content p{
+        text-transform: uppercase;
+        color: grey;
+    }
+
+    /* ###############     HEADER-CONTENT STYLING     #################### */
+
+   .header-content{
+       position: absolute;
+       text-align: center;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+   }
+   /* #####################     Sites       ############################*/
+     a:visited{
+           color:rgb(81, 13, 145)
+
+       }    
+       a:hover{
+           color: red;
+           /* background-color: rgb(233, 222, 227); */
+       }
+       a:active{
+           color: black;
+       }
+
+       /* #################  showcaeSECTION ################# */
+       .section{
+           background-color: rgb(238, 232, 224);
+       }
+       .showcase{
+           color: rgba(17, 14, 14, 0.867);
+           padding: 6rem;
+
+       }
+       .row{
+           height: 16.5rem;
+           border: 5px solid white;
+           box-shadow: 5px 5px 20px 0px;
+       }
+       .row1{
+           margin-bottom: 10rem;
+       }
+       .row2{
+           margin-bottom:10rem;
+       }
+       .row1 .img-box,.row2 .text-box{
+           float: left;
+           width: 50%;
+          
+       }
+       .row2 .img-box,.row1 .text-box {
+           float: right;
+           width: 50%;
+          
+       }
+       .row .img-box{   
+           height: 100%;
+       }
+       .row .text-box{
+           padding: 0.75rem;
+       }
+       
+       .row .img-box img{
+           display: inline-block;
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+       .row::after{
+           content: '';
+           display: block;
+           clear: both;
+       }
+       
+/* ######################################      ABOUT PAGE    ######################### */
+
+.about{
+    padding: 3rem;
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid rgba(202, 9, 83, 0.712);
+    width: 90%
+    
+}
+        /* ###################     about warpper   ################### */
+.about-wrapper{
+   
+    text-align: center;
+    margin: 2rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+    font-size: 1.25rem;
+}
+.about-wrapper .right{
+    float: left;
+    width: 50%;
+    font-size: 1.25rem;
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '';
+    color: rgb(192, 62, 11);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+       /* ############## About banner   ####################### */
+.banner{
+    border: 2px solid red;
+    background-color: #d64c7f;
+    color: #f4f4f4;
+    padding: 0.75rem;
+    box-shadow: 5px 5px 10px #00000057;
+    margin-top: 2rem;
+}
+.banner-left{
+    float:left;
+    width: 60%;
+}
+.banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.banner-line{
+    font-size: 1.85rem;
+    margin-top: 0.5rem;
+}
+.btn-banner{
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    border: 3px solid white;
+    padding: 0.3rem 2.5rem;
+    letter-spacing: 0.5rem;
+
+}
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+        /* #####################   contact #################### */
+
+.contact-form{
+    padding: 5rem;
+    background-color: #f4f4f4;
+
+}
+
+.form-wrapper .company-address{
+    background: #f4f4f4;
+    height: 760px;
+    float: left;
+    width: 49%;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+.form-wrapper .company-address i{
+        display: inline-block;
+        margin-right: 1rem;
+        padding: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .company-address img{
+    width: 90%;
+    min-height: 5rem;
+    object-fit: cover;  
+}
+
+    /* ###################### form wrapper ######################### */
+    .form-wrapper .form{
+        font-size: 1.5rem;
+        height: 760px;
+        background: #f4f4f4;
+        float: right;
+        padding: 1rem;
+        width: 49%;
+    }
+    .form h1::after{
+        content: '';
+        display: block;
+        border: 3px solid #ee4758;
+        width: 98%;
+    }
+    .form-wrapper .form label{
+        display: block;
+    }
+    .form-wrapper .form input{
+        padding: 0.5rem;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.05rem;
+    }
+    .form-wrapper .form textarea{
+        text-transform: uppercase;
+        font-size: 1.05rem;
+    }
+    .form-wrapper .form .form-group{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        
+   }
+   .form-wrapper .form .form-btn{
+       display: block;
+       margin: 0 auto;
+       padding: 0.5rem 3rem;
+       font-size: 1.2rem;
+       text-transform: uppercase;
+       background-color: #ee4758;
+       color: aliceblue;
+       outline: none;
+       border: none;
+       cursor: pointer;      
+   }
+
+   /* ##############################    Media quaries   #################### */
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .header-content{
+        font-size: 2rem;
+    }
+     .navbar .nav-item,.navbar.logo{
+        display: block;
+        width: 40%;
+        height: 20%;
+    }
+    .navbar .logo{
+        margin-top: 1.75rem;
+        height: 8rem;
+        width: 9rem;
+    }
+    .navbar .nav-items{
+        float:right;
+        display: block;
+        margin-top: 3rem;
+        font-size: 2rem;
+        word-spacing: 1rem;
+        text-transform: uppercase;
+    }
+    .banner-left{
+        float:left;
+        width: 40%;
+    }
+    .banner-right{
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+    .btn-banner{
+        font-size: 1.5rem;
+        /* border: 2px solid white;
+        padding: 0.13rem 1.5rem; */
+        padding: 0.3rem 2.5rem;
+        letter-spacing: 0.5rem;
+    
+    }
+    
+    
+    .showcase .text-box p{
+        font-size: 0.80rem;
+
+    }
+}
